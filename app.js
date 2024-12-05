@@ -1,5 +1,4 @@
-
-  const  navabar=document.querySelector("nav")
+ const  navabar=document.querySelector("nav")
   const menuIcon=document.querySelector(".menu-icon")
   const navLinks=document.querySelector('.nav-links')
   window.addEventListener("scroll",function(){
