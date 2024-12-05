@@ -1,15 +1,7 @@
 
-  // const navabar =document.getElementsByClassName("navbar")
-
-  // window.addEventListener("scroll ", function(){
-  //   if (window.scrollY> 50) {
-  //       navabar.classList.add("scrolled")
-        
-  //   }else{
-  //       navabar.classList.remove('scrolled')
-  //   }
-  // })
   const  navabar=document.querySelector("nav")
+  const menuIcon=document.querySelector(".menu-icon")
+  const navLinks=document.querySelector('.nav-links')
   window.addEventListener("scroll",function(){
     if (window.screenY> 50) {
       navabar.classList.add("scrolled")
@@ -18,4 +10,6 @@
       navabar.classList.remove("remove")
     }
   })
-  
+  menuIcon.addEventListener('click',()=>{
+    navLinks.classList.toggle('active')
+  })
